@@ -1,4 +1,4 @@
-const iconMenu = document.querySelector(".menu__icon");
+const iconMenu = document.querySelector(".icon-menu");
 
 if (iconMenu) {
 	const menuBody = document.querySelector(".menu__body");

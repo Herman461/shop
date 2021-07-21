@@ -142,8 +142,6 @@ a {
 
 .top-header {
   background-color: whitesmoke;
-  position: relative;
-  z-index: 5;
 }
 
 .top-header__container {
@@ -161,6 +159,8 @@ a {
 
 .top-header__logo {
   font-size: 21px;
+  position: relative;
+  z-index: 3;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -168,15 +168,10 @@ a {
 }
 
 .top-header__phone {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   color: #2f302f;
-}
-
-.menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .menu__list li {
@@ -192,24 +187,32 @@ a {
   font-weight: 700;
 }
 
-.bottom-header {
-  background-color: #fff;
-  position: relative;
-  z-index: 5;
-}
-
-.bottom-header__container {
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .icon-menu {
+  position: relative;
+  z-index: 3;
   display: none;
+}
+
+@media (min-width: 767.98px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .bottom-header {
+    background-color: #fff;
+  }
+
+  .bottom-header__container {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -223,22 +226,48 @@ a {
 }
 
 @media (max-width: 767.98px) {
+  .top-header__phone {
+    font-size: 18px;
+    margin: 0px 0px 20px 0px;
+  }
+
   .menu__body {
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 100px 10px 15px 10px;
+    z-index: 2;
+    overflow: auto;
+    padding: 80px 10px 15px 15px;
     background-color: #eedcdc;
   }
 
-  .menu__list {
-    display: block;
+  .menu__body._active {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .menu__body:before {
+    content: "";
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 3;
   }
 
   .menu__list li {
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 22px 0px;
   }
 
   .menu__list li:last-child {
@@ -255,7 +284,6 @@ a {
     width: 30px;
     height: 18px;
     cursor: pointer;
-    z-index: 3;
   }
 
   .icon-menu span {

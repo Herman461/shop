@@ -66,7 +66,7 @@ let _slideToggle = (target, duration = 500) => {
 		return _slideUp(target, duration);
 	}
 }
-const iconMenu = document.querySelector(".menu__icon");
+const iconMenu = document.querySelector(".icon-menu");
 
 if (iconMenu) {
 	const menuBody = document.querySelector(".menu__body");
