@@ -8,7 +8,7 @@
 	}
 }
 .top-header {
-	background-color: rgb(245, 245, 245);
+	background-color: $backcol;
 	&__container {
 		height: 50px;
 		display: flex;
@@ -24,14 +24,14 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		letter-spacing: 0.2px;
-		color: rgb(47, 48, 47);
+		color: $col1;
 	}
 
 	&__phone {
 		display: block;
 		font-weight: 700;
 		font-size: 16px;
-		color: rgb(47, 48, 47);
+		color: $col1;
 		@media (max-width: $md3+px) {
 			font-size: 18px;
 			margin: 0px 0px 20px 0px;
@@ -52,7 +52,7 @@
 			z-index: 2;
 			overflow: auto;
 			padding: 80px 10px 15px 15px;
-			background-color: rgb(238, 220, 220);
+			background-color: $col1;
 			&._active {
 				transform: none;
 			}
@@ -63,7 +63,7 @@
 				top: 0;
 				left: 0;
 				width: 100%;
-				background-color: rgb(245, 245, 245);
+				background-color: #fff;
 				z-index: 3;
 			} 
 		}
@@ -91,11 +91,12 @@
 		font-size: 16px;
 		font-weight: 700;
 		@media (max-width: $md3+px) {
+			color: $backcol;
 			font-size: 20px;
 		}
 		@media (min-width: $md2+px) {
 			&:hover {
-				color: rgb(128, 123, 123);
+				color: $col2;
 			}
 		}
 	}
@@ -139,7 +140,7 @@
 			top: calc(50% - 1px);
 			width: 100%;
 			height: 2px;
-			background-color: rgb(212, 19, 19);
+			background-color: $col2;
 		}
 		span:first-child {
 			top: 0px;

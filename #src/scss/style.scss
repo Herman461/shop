@@ -103,9 +103,12 @@ $maxWidthContainer: 1370;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
-
+$backcol: #fff8f2;
+$col1: #414040;
+$col2: #fa8b0b;
+$col3: rgb(236, 226, 218);
 body {
-	color: #161619;
+	color: $col1;
 	font-size: 14px;
 	font-family: "Roboto";
 	&._lock {
@@ -114,7 +117,7 @@ body {
 }
 
 a {
-	color: #161619;
+	color: $col1;
 }
 
 .btn {
@@ -126,12 +129,12 @@ a {
 	padding: 0px 23px;
 	transition: all 0.3s ease 0s;
 	font-size: 12px;
-	border: 1px solid rgb(82, 80, 80);
+	border: 1px solid $col1;
 	border-radius: 3px;
 	@media (min-width: $md2+px) {
 		&:hover {
 			color: #fff;
-			background-color: rgb(82, 80, 80);
+			background-color: $col1;
 		}
 	}
 }

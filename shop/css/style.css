@@ -96,7 +96,7 @@ h6 {
 }
 
 body {
-  color: #161619;
+  color: #414040;
   font-size: 14px;
   font-family: "Roboto";
 }
@@ -106,7 +106,7 @@ body._lock {
 }
 
 a {
-  color: #161619;
+  color: #414040;
 }
 
 .btn {
@@ -126,7 +126,7 @@ a {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   font-size: 12px;
-  border: 1px solid #525050;
+  border: 1px solid #414040;
   border-radius: 3px;
 }
 
@@ -158,7 +158,7 @@ a {
 }
 
 .top-header {
-  background-color: whitesmoke;
+  background-color: #fff8f2;
 }
 
 .top-header__container {
@@ -181,14 +181,14 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2px;
-  color: #2f302f;
+  color: #414040;
 }
 
 .top-header__phone {
   display: block;
   font-weight: 700;
   font-size: 16px;
-  color: #2f302f;
+  color: #414040;
 }
 
 .menu__list li {
@@ -235,8 +235,8 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 20%;
           flex: 0 1 20%;
-  -webkit-box-shadow: inset 0 0 0 1px #e1e1e1;
-          box-shadow: inset 0 0 0 1px #e1e1e1;
+  -webkit-box-shadow: inset 0 0 0 1px #ece2da;
+          box-shadow: inset 0 0 0 1px #ece2da;
   margin-right: -1px;
   margin-top: -1px;
 }
@@ -320,8 +320,8 @@ a {
       -ms-flex: 0 0 37px;
           flex: 0 0 37px;
   height: 37px;
-  border: 1px solid #e1e1e1;
-  background: whitesmoke url("../img/shopping-cart.png") center center/25px no-repeat;
+  border: 1px solid #ece2da;
+  background: #fff8f2 url("../img/shopping-cart.png") center center/25px no-repeat;
 }
 
 .footer__content {
@@ -332,11 +332,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eedcdc;
+  background-color: #fff8f2;
 }
 
 .footer__copy {
-  color: #525050;
+  color: #414040;
 }
 
 @media (min-width: 767.98px) {
@@ -364,11 +364,11 @@ a {
 @media (min-width: 991.98px) {
   .btn:hover {
     color: #fff;
-    background-color: #525050;
+    background-color: #414040;
   }
 
   .menu__link:hover {
-    color: #807b7b;
+    color: #fa8b0b;
   }
 }
 
@@ -409,7 +409,7 @@ a {
     z-index: 2;
     overflow: auto;
     padding: 80px 10px 15px 15px;
-    background-color: #eedcdc;
+    background-color: #414040;
   }
 
   .menu__body._active {
@@ -425,7 +425,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #fff;
     z-index: 3;
   }
 
@@ -438,6 +438,7 @@ a {
   }
 
   .menu__link {
+    color: #fff8f2;
     font-size: 20px;
   }
 
@@ -458,7 +459,7 @@ a {
     top: calc(50% - 1px);
     width: 100%;
     height: 2px;
-    background-color: #d41313;
+    background-color: #fa8b0b;
   }
 
   .icon-menu span:first-child {

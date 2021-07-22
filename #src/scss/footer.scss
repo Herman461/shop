@@ -5,11 +5,11 @@
 		height: 45px;
 		display: flex;
 		align-items: center;
-		background-color: rgb(238, 220, 220);
+		background-color: $backcol;
    }
 
    &__copy {
-		color: rgb(82, 80, 80);
+		color: $col1;
    }
 }
 
