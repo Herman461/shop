@@ -121,9 +121,17 @@ a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	min-height: 33px;
+	text-transform: uppercase;
+	padding: 0px 23px;
+	transition: all 0.3s ease 0s;
+	font-size: 12px;
+	border: 1px solid rgb(82, 80, 80);
+	border-radius: 3px;
 	@media (min-width: $md2+px) {
 		&:hover {
-			background-color: #bd6d3c;
+			color: #fff;
+			background-color: rgb(82, 80, 80);
 		}
 	}
 }
@@ -136,6 +144,10 @@ a {
 	flex-direction: column;
 }
 
+.page {
+	margin: 0px 0px 25px 0px;
+}
+
 ._container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
@@ -146,3 +158,5 @@ a {
 }
 
 @import "header.scss";
+@import "home.scss";
+@import "footer.scss";
